@@ -1,0 +1,75 @@
+2018-09-16 11:48:57,210 ERROR: Exception on /edit_profile [POST] [in /home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/python/Desktop/microblog/app/routes.py", line 100, in edit_profile
+    form=form)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/python/Desktop/microblog/venv/local/lib/python2.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/python/Desktop/microblog/app/templates/edit_profile.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/python/Desktop/microblog/app/templates/base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/python/Desktop/microblog/app/templates/edit_profile.html", line 11, in block "content"
+    <span style="color: red;">[{{ error }}]</span>
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)
+2018-09-16 11:49:02,192 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 11:51:10,260 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 12:53:23,721 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 12:53:37,046 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 12:59:03,568 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:08:30,386 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:12:53,157 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:21:45,901 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:23:09,507 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:23:36,942 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:25:25,737 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:26:46,620 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:29:16,848 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:29:24,750 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:36:28,374 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:39:45,642 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:42:55,745 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:46:02,778 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 13:49:56,980 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:32:36,441 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:37:01,699 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:39:29,299 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:44:29,718 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:45:31,965 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:49:05,919 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 15:58:41,081 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:08:23,834 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:15:09,877 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:16:05,874 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:51:48,065 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:52:16,335 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 16:59:37,354 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:00:10,098 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:00:30,205 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:03:46,885 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:07:04,773 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:10:50,210 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:12:44,168 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:18:42,751 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:49]
+2018-09-16 17:37:11,021 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:50]
+2018-09-16 17:52:43,085 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:50]
+2018-09-16 17:52:52,530 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:50]
+2018-09-16 18:11:21,028 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:53]
+2018-09-16 18:16:02,902 INFO: Microblog startup [in /home/python/Desktop/microblog/app/__init__.py:53]
